@@ -4,7 +4,7 @@ import 'package:permission_handler/permission_handler.dart';
 
 /// A service that listens for incoming SMS messages in real-time
 class SmsService {
-  static const MethodChannel _channel = MethodChannel('com.example.sms_reader_app/sms');
+  static const MethodChannel _channel = MethodChannel('com.finnamind.sms/sms');
   static final SmsService _instance = SmsService._internal();
   
   factory SmsService() => _instance;

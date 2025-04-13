@@ -1,4 +1,4 @@
-package com.example.sms_reader_app
+package com.finnamind.sms
 
 import android.content.BroadcastReceiver
 import android.content.Context
@@ -13,7 +13,7 @@ import io.flutter.plugin.common.MethodCall
 import io.flutter.plugin.common.MethodChannel
 
 class MainActivity: FlutterActivity() {
-    private val CHANNEL = "com.example.sms_reader_app/sms"
+    private val CHANNEL = "com.finnamind.sms/sms"
     private var smsReceiver: BroadcastReceiver? = null
     private var methodChannel: MethodChannel? = null
 

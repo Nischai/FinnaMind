@@ -1,6 +1,6 @@
-# FinnaMind SMS Reader
+# FinnaMind
 
-A Flutter application that reads SMS messages and parses their content.
+A Flutter application that reads SMS messages and parses their content. This is an Android-only app.
 
 ## Features
 
@@ -16,7 +16,7 @@ A Flutter application that reads SMS messages and parses their content.
 
 - Flutter SDK
 - Android Studio or VS Code with Flutter extensions
-- An Android device or emulator (iOS doesn't support SMS reading)
+- An Android device or emulator
 
 ### Installation
 
@@ -57,3 +57,14 @@ These permissions are considered sensitive and require explicit user approval.
 - `lib/message_parser.dart`: Utility for parsing SMS content
 - `lib/sms_service.dart`: Service for listening to incoming SMS messages
 - `android/`: Native Android code for SMS permissions and receivers
+
+## Platform Support
+
+This app is designed for Android only, as iOS does not allow third-party apps to read SMS messages due to platform restrictions.
+
+## Use Cases
+
+- Analyzing SMS notifications from banks, delivery services, etc.
+- Extracting important information from messages
+- Testing SMS parsing algorithms
+- Educational tool for understanding text parsing techniques

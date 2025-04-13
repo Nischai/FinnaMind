@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.sms_reader_app">
+    package="com.finnamind.sms">
     
     <!-- SMS Permissions -->
     <uses-permission android:name="android.permission.READ_SMS" />
     <uses-permission android:name="android.permission.RECEIVE_SMS" />
     
     <application
-        android:label="SMS Reader App"
+        android:label="FinnaMind"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

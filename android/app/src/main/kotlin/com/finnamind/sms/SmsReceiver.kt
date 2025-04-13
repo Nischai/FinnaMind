@@ -1,4 +1,4 @@
-package com.example.sms_reader_app
+package com.finnamind.sms
 
 import android.content.BroadcastReceiver
 import android.content.Context

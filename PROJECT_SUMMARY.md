@@ -1,8 +1,8 @@
-# SMS Reader App - Project Summary
+# FinnaMind - Project Summary
 
 ## Overview
 
-This Flutter application is designed to read SMS messages on Android devices, parse the content of those messages, and display both the original and parsed information to the user. The app demonstrates how to:
+FinnaMind is a Flutter application designed to read SMS messages on Android devices, parse the content of those messages, and display both the original and parsed information to the user. The app demonstrates how to:
 
 1. Request and handle SMS permissions
 2. Read existing SMS messages from the device
