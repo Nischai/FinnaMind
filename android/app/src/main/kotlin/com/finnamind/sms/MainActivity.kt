@@ -4,12 +4,10 @@ import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
 import android.content.IntentFilter
-import android.os.Bundle
 import android.provider.Telephony
 import android.util.Log
 import io.flutter.embedding.android.FlutterActivity
 import io.flutter.embedding.engine.FlutterEngine
-import io.flutter.plugin.common.MethodCall
 import io.flutter.plugin.common.MethodChannel
 
 class MainActivity: FlutterActivity() {
@@ -59,7 +57,7 @@ class MainActivity: FlutterActivity() {
                         smsData["body"] = body
                         smsData["timestamp"] = timestamp
                         
-                        activity.runOnUiThread {
+                        activity?.runOnUiThread {
                             methodChannel?.invokeMethod("onSmsReceived", smsData)
                         }
                     }
@@ -67,13 +65,13 @@ class MainActivity: FlutterActivity() {
             }
         }
 
-        registerReceiver(smsReceiver, intentFilter)
+        context?.registerReceiver(smsReceiver, intentFilter)
         Log.d("MainActivity", "SMS receiver registered")
     }
 
     override fun onDestroy() {
         if (smsReceiver != null) {
-            unregisterReceiver(smsReceiver)
+            context?.unregisterReceiver(smsReceiver)
             smsReceiver = null
         }
         super.onDestroy()
